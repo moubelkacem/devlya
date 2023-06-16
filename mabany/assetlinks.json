@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "dev.moubelkacem.mabanyqatar",
+    "sha256_cert_fingerprints":
+    ["7C:7B:B2:F2:5A:E2:05:75:28:C3:4D:C0:35:C5:6B:79:03:C8:97:76:9A:E1:F7:1F:1D:BE:21:48:77:94:6D:F8"]
+  }
+}]
