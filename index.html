@@ -1,10 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Grid</title>
+    <style>
+        /* Basic CSS for layout and styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
 
-We dev apps (Any Category) 
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-Call us:
-+212674570649
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            text-decoration: none; /* Removes underline from <a> */
+            color: inherit; /* Inherits text color */
+            display: block; /* Ensures the entire card is clickable */
+        }
 
-Portfolio:
-https://www.fiverr.com/users/moubelkacem/
-https://www.linkedin.com/in/m-oubelkacem-a7147a198/
+        .product-card:hover {
+            transform: translateY(-5px);
+            cursor: pointer; /* Shows clickable cursor */
+        }
 
+        .product-image {
+            max-width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .product-title {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .product-description {
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; margin-bottom: 20px;">Our Products</h1>
+        <h3 style="text-align: center; margin-bottom: 20px;">
+  We dev apps (Any Category)
+    Call us:
+    +212674570649
+    Portfolio:
+    <a href="https://www.fiverr.com/users/moubelkacem/">Fiverr Account</a>
+
+        </h1>
+    <div class="product-grid">
+        <!-- Product 1 -->
+        <a href="https://play.google.com/store/apps/details?id=com.moubelkacem.zawajapp" class="product-card">
+            <img src="https://play-lh.googleusercontent.com/w1k9DcWl6CHntEr1Bz03UN1C2PQ2IYCNk3664Iy_RH8O3mdzkAAg4QZKeSueS_UWwzLf=w240-h480-rw" alt="Product 1" class="product-image">
+            <h2 class="product-title">زواج (البحث عن شريك الحياة)</h2>
+            <p class="product-description">تطبيق زواج ، البحث عن شريك الحياة.
+
+ مهمة النطبيق  تسهيل البحث عن شريك او شريكة الحياة (النصف الآخر) لغرض الزواج الحلال بادن الله.
+
+يتيح لك التطبيق عدم الكشف عن هويتك للمستخدمين الآخرين حتى الموافقة وحتى  تشعر بالاستعداد لتقديم المزيد من المعلومات عند الدردشة معهم.</p>
+        </a>
+
+        <!-- Product 2 -->
+        <a href="https://play.google.com/store/apps/details?id=com.moubelkacem.signgame" class="product-card">
+            <img src="https://play-lh.googleusercontent.com/zK381Uh4JWLijsM69p_u4e_DeHtsYVFmQ7xdb8UfLbMlGw8r_6zMS-lrVjNacdfaYXsY=w240-h480-rw" alt="Product 2" class="product-image">
+            <h2 class="product-title">لعبة إشارات المرور</h2>
+            <p class="product-description">هذه اللعبة ستساعدك بشكل سهل و يسر في حفظ أشارات المرور</p>
+        </a>
+
+        <!-- Product 3 -->
+        <a href="https://play.google.com/store/apps/datasafety?id=com.vastcom.spa" class="product-card">
+            <img src="https://play-lh.googleusercontent.com/8J-UQCfZmWGqwpdjhKnl11TjH1x99vBt4FtbnlpoCkLBKPaLzqakL6aCPsr1ajF3Jg=s124-rw" alt="Product 3" class="product-image">
+            <h2 class="product-title">تدليك منزلي</h2>
+            <p class="product-description">أحضرنا خدمات SPA إلى منزلك</p>
+        </a>
+
+        <!-- Product 4 -->
+        <a href="https://play.google.com/store/apps/details?id=com.devlya.partner" class="product-card">
+            <img src="https://play-lh.googleusercontent.com/yV3ZWGm_dmkOm1ZAzppQoNgTHsakkeWVpHSOywK3xWJ3L6IOWQcKYWuaPwq8uERSr7I=s124-rw" alt="Product 4" class="product-image">
+            <h2 class="product-title">شريك (احصل على شراكة)</h2>
+            <p class="product-description">تطبيق شريك هو أسهل طريقة للعثور على شريك.</p>
+        </a>
+    </div>
+    <div>
+      <p>
+
+      </p>
+    </div>
+</body>
+</html>
